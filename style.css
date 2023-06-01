@@ -1,0 +1,18 @@
+body {
+    background: white;
+}
+#canvas1 {
+    border: 3px solid black;
+    width: 800px;
+    height: 500px;
+}
+@font-face {
+    font-family: Stonecraft;
+    font-weight: normal;
+    src: url(font/stonecraft.ttf);
+}
+@font-face {
+    font-family: BrianneTod;
+    font-weight: normal;
+    src: url(font/briannetod.ttf);
+}
