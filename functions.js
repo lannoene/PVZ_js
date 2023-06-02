@@ -434,14 +434,11 @@ function spawnZombies() {
 		if (level == 1 && world == 1) {
 			var rng = Math.floor(Math.random() * 1);
 			rng = rng + 2;
-			sunDelay = 400;
 		} else if (level == 2 && world == 1) {
 			var rng = Math.floor(Math.random() * 3);
 			rng = rng + 1;
-			sunDelay = 400;
 		} else {
 			var rng = Math.floor(Math.random() * 5);
-			sunDelay = 600;
 		}
 		
 		game_Zombies.push(new zombie(levelZombies[0], rng));
@@ -534,6 +531,7 @@ function checkChooseSeedsBounds() {
 						case 1:
 							levelZombies = [1, 150, 1, 300, 1, 450, 1, 500, 1, 650, 1, 700, 1, 790, 1, 880];
 							getSeed = true;
+							sunDelay = 400;
 						break;
 						case 2:
 							levelZombies = [1, 200, 1, 400, 1, 550, 1, 600, 1, 700, 1, 850, 1, 900, 1, 999];
@@ -541,7 +539,8 @@ function checkChooseSeedsBounds() {
 						break;
 						case 3:
 							levelZombies = [1, 200, 1, 400, 1, 550, 1, 600, 1, 700, 1, 800, 1, 850, 1, 860, 1, 890, 1, 910, 1, 980, 1, 1105, 1, 1130, 1, 1180, 1, 1200];
-							getSeed = true;
+							getSeed = true;	
+							sunDelay = 600;
 						break;
 						case 4:
 							levelZombies = [1, 200, 1, 300, 1, 400, 1, 460, 2, 600, 1, 610, 1, 670, 1, 700, 1, 750, 2, 800, 1, 850, 1, 900, 1, 910];
